@@ -17,7 +17,7 @@ public class Employee {
 	private String emailId;
 	private int cedula;
 	private String usuario;
-	private String contraseña;
+	private String contrasena;
 	
 	
 
@@ -30,14 +30,14 @@ public class Employee {
 
 
 
-	public Employee(String firstName, String lastName, String emailId, int cedula, String usuario, String contraseña) {
+	public Employee(String firstName, String lastName, String emailId, int cedula, String usuario, String contrasena) {
 		
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.emailId = emailId;
 		this.cedula = cedula;
 		this.usuario = usuario;
-		this.contraseña = contraseña;
+		this.contrasena = contrasena;
 	}
 	
 	@Id
@@ -95,18 +95,18 @@ public class Employee {
 		this.usuario = usuario;
 	}
 	@Column(name = "CONTRASEÑA", nullable = false)
-	public String getContraseña() {
-		return contraseña;
+	public String getContrasena() {
+		return contrasena;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContrasena(String contraseña) {
+		this.contrasena = contraseña;
 	}
 
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", emailId=" + emailId
-				+ ", cedula=" + cedula + ", usuario=" + usuario + ", contraseña=" + contraseña + "]";
+				+ ", cedula=" + cedula + ", usuario=" + usuario + ", contraseña=" + contrasena + "]";
 	}
 
 	

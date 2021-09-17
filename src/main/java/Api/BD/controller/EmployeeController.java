@@ -57,7 +57,7 @@ public class EmployeeController {
 		employee.setLastName(employeeDetails.getLastName());
 		employee.setFirstName(employeeDetails.getFirstName());
 		employee.setCedula(employeeDetails.getCedula());
-		employee.setContraseña(employeeDetails.getContraseña());
+		employee.setContrasena(employeeDetails.getContrasena());
 		employee.setUsuario(employeeDetails.getUsuario());
 		final Employee updatedEmployee = employeeRepository.save(employee);
 		return ResponseEntity.ok(updatedEmployee);
